@@ -1,0 +1,74 @@
+.ball-container {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-top: 50px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.ball1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation: ballbouncing alternate 2s ease infinite;
+}
+
+.ball2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    animation: ballbouncing alternate 2s ease-in-out infinite;
+}
+
+.ball3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: ballbouncing alternate 2s ease-out infinite;
+}
+
+@keyframes ballbouncing {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(300px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 170px;
+    }
+}
