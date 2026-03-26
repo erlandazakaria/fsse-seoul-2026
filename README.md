@@ -1,4 +1,5 @@
 # fsse-seoul-2026
 
 1. Dimas
-2. Erlanda
+2. Satria
+3. Erlanda

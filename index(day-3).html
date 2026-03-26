@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ball</title>
+    </head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: auto;
+            border: solid black 3px;
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .ball-1{
+            
+            background-color: red;
+            animation: bounce-1 0.5s infinite alternate ease;
+        }
+
+        .ball-2{
+            background-color: blue;
+            animation: bounce-2 2s infinite alternate ease;
+        }
+
+        .ball-3{
+            background-color: yellow;
+            animation: bounce-3 3s infinite alternate ease;
+
+        }
+
+        @keyframes bounce-1{
+            from {
+               transform: translateY(0px)
+            }
+
+            to {
+                transform: translateY(-350px)
+            }
+        }
+
+        @keyframes bounce-2{
+            from {
+               transform: translateY(0px)
+            }
+
+            to {
+                transform: translateY(-200px)
+            }
+        }
+
+        @keyframes bounce-3{
+            from {
+               transform: translateY(0px)
+            }
+
+            to {
+                transform: translateY(-100px)
+            }
+        }
+    </style>
+    <body>
+            <div class="container">
+                <div class="ball ball-1"></div>
+                <div class="ball ball-2"></div>
+                <div class="ball ball-3"></div>
+            </div>
+    </body>
+</html>
